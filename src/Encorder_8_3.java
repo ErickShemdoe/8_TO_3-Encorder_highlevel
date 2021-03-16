@@ -16,6 +16,7 @@ public class Encorder_8_3 {
 
     public static void main(String[] args) {
         String result = null;
+
         Scanner input = new Scanner(System.in);
         System.out.println("WELCOME TO 8:3 ENCORDER");
         System.out.println("PLEASE PROVIDE 8 BIT PATTERN TO ENCODE TO 3 BITS");
@@ -34,6 +35,12 @@ public class Encorder_8_3 {
 
 
                 result = Integer.toBinaryString(i);
+
+                if(result.equals("0")){
+
+                    result = "000";
+
+                }
 
               
             }
